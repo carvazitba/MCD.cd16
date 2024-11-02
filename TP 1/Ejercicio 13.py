@@ -12,7 +12,7 @@ def filtro_mediana(imagen, tamaño):
 
 # Función para aplicar el filtro de la mediana ponderada de 3x3
 def filtro_mediana_ponderada(imagen):
-    kernel = np.array([[1, 2, 1], [2, 4, 2], [1, 2, 1]], np.float32) / 16
+    kernel = np.array([[1, 2, 1], [2, 4, 2], [1, 2, 1]], np.float32) / 16   #corregir kernel!!!!
     return cv2.filter2D(imagen, -1, kernel)
 
 # Función para aplicar el filtro de Gauss con diferentes valores de sigma
